@@ -6,7 +6,7 @@
     "navbar navbar navbar"
     "header header header"
     "slide slide information"
-    "slide_1 slide_1 name4"
+    "Text_1 Text_1 Image_1"
 }
 
 .navbar {
@@ -81,3 +81,9 @@
     text-align: center;
 }
  
+.Text_1{
+    grid-area: Text_1;
+    background-color: aliceblue;
+    padding: 30px;
+    text-align: center;
+}
