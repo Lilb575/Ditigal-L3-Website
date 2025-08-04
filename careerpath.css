@@ -33,3 +33,57 @@
     background-color: #d5bdaf;
  
 }
+
+.image_1 {
+    grid-area: image_4;
+    background-color:  #dddddd;
+    height: auto;
+}
+
+.Text_1{
+    grid-area: Text_1;
+    background-color: rgb(239, 242, 245);
+    padding: 30px;
+    text-align: center;
+}
+
+.Text_1{
+    grid-area: Text_1;
+    background-color: rgb(239, 242, 245);
+    padding: 30px;
+    text-align: center;
+}
+
+.Text_2{
+    grid-area: Text_1;
+    background-color: rgb(239, 242, 245);
+    padding: 30px;
+    text-align: center;
+}
+
+.Text_2{
+    grid-area: Text_1;
+    background-color: rgb(239, 242, 245);
+    padding: 30px;
+    text-align: center;
+}
+
+.image_2 {
+    grid-area: image_4;
+    background-color:  #dddddd;
+    height: auto;
+}
+
+.image_3 {
+    grid-area: image_4;
+    background-color:  #dddddd;
+    height: auto;
+}
+
+.Text_3{
+    grid-area: Text_1;
+    background-color: rgb(239, 242, 245);
+    padding: 30px;
+    text-align: center;
+}
+
