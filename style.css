@@ -7,106 +7,292 @@
     "header header header"
     "image_1 text_1 text_1"
     "text_2 text_2 image_2"
-    "footer footer footer"
+    "footer footer footer";
+font-family:"Poppins", sans-serif;
+margin: 0%;
+background-color: #f8f8f8;
+color: #333;
+
 }
 
-.navbar {
-    grid-area: navbar;
-    text-align: center;
-    background-color: #7aa086;
- 
- 
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  background: #ffffff;             
+  padding: 10px 24px;
+  position: sticky;                
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+
+.logo {
+  height: 60px;      
+  width: auto;
+  display: block;
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
  
 .navbar li {
-    display: inline;
-    font-family: 'Bebas Neue';
-    font-size: 20px;
-    padding: 20px;
-    
- 
+   display: inline-block;
+   margin: 0 20px;
+
 }
- 
+
 .navbar a {
-    background-color: #7aa086;
+    color: #7aa086;
+    text-decoration: none;
+    font-family: "Bebas Neue" , sans-serif;
+    font-size: 20px;
+    transition: color 0.3s;
+
+}
+
+.navbar a:hover{
+    color: #dce4dc;
+}
+
+.header {grid-area: header;}
+
+.navbar input[type="text"] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
 }
 
 .header {
     grid-area: header;
     background-color: #7aa086;
-    padding: 30px;
+    padding: 40px 0;
     text-align: center;
+    color: white;
    
 }
 
-#slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinate;
+.header h1 {
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
-#slider figure img {
-    width: 20;
-    float: left;
-}
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: -100%;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-}
-
-.text_1{
-    grid-area: text_1;
-    background-color:  #dddddd;
-    padding: 30px;
+.image_1, .image_2 {
     text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
 }
- 
-.text_2{
-    grid-area: text_2;
-   background-color:  #dddddd;
+
+.image_1 img, .image_2 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text_1, .text_2 {
+    background-color: #ffffff;
     padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.text_1 h2, .text_2 h2 {
+    color: #7aa086;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.text_2 p {
+    font-style: italic;
     text-align: center;
-}
-
-
-.image_1 {
-    grid-area: image_1;
-    background-color:  #dddddd;
-    height: auto;
-}
-
-.image_2 {
-    grid-area: image_2;
-    background-color:  #dddddd;
-    height: auto;
 }
 
 .footer {
     grid-area: footer;
     text-align: center;
-    background-color:  #7aa086;
+    background-color: #7aa086;
+    color: white;
+    padding: 20px 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
-img {
-    width: 80%;
-    height: auto;
+.image_1 { grid-area: image_1; } 
+.text_1  { grid-area: text_1; } 
+.text_2  { grid-area: text_2; } 
+.image_2 { grid-area: image_2; } 
+
+
+.intro { 
+background-color: #ffffff; 
+padding: 40px; 
+text-align: center; 
+border-radius: 10px; 
+margin: 20px auto; 
+width: 80%; 
+box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+
+} 
+
+ 
+
+.intro h2 { 
+color: #7aa086; 
+font-family: "Bebas Neue", sans-serif; 
+} 
+
+ 
+
+.intro blockquote { 
+font-style: italic; 
+color: #555; 
+margin-top: 15px; 
+
+} 
+
+ .button { 
+  display: inline-block; 
+  background-color: #7aa086; 
+  color: white; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  font-weight: bold; 
+  margin-top: 15px; 
+  transition: background-color 0.3s; 
+} 
+
+ 
+
+.button:hover { 
+  background-color: #62846b; 
+} 
+
+
+#slider { 
+  grid-column: 1 / 4; 
+  overflow: hidden; 
+  height: 400px; 
+  position: relative; 
+  margin-bottom: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+} 
+
+ 
+
+#slider { 
+  grid-column: 1 / 4; 
+  overflow: hidden; 
+  height: 400px; 
+  position: relative; 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+} 
+
+ 
+
+ 
+
+.mission-overlay { 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  background: rgba(0, 0, 0, 0.5);  
+  color: white; 
+  padding: 30px 40px; 
+  border-radius: 12px; 
+  width: 70%; 
+  max-width: 700px; 
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3); 
+} 
+
+ 
+
+ 
+
+.mission-overlay h2 { 
+  font-family: "Bebas Neue", sans-serif; 
+  font-size: 36px; 
+  color: #fff; 
+  margin-bottom: 10px; 
+  letter-spacing: 1px; 
+} 
+
+ 
+
+.mission-overlay p,  
+.mission-overlay blockquote { 
+  font-family: "Poppins", sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+} 
+
+ 
+.mission-overlay .button { 
+  display: inline-block; 
+  margin-top: 15px; 
+  background-color: #7aa086; 
+  color: white; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  font-weight: bold; 
+  transition: background-color 0.3s; 
+} 
+
+.mission-overlay.button:hover {
+    background-color: #62846b;
+}
+
+#slider figure { 
+    position: relative; 
+    width: 500%; 
+    margin: 0; 
+    left: 0; 
+    animation: slider 20s infinite; 
+} 
+
+#slider figure img {
+    width: 20%; 
+    float: left; 
+}
+
+
+@keyframes slider {
+    0% {left: 0; }
+    20% {left: 0%;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: 0;}
+}
+#slider {
+  grid-column: 1 / 4;
+  overflow: hidden;
+  height: 400px; /* adjust to match your images */
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#slider figure img {
+  height: 400px;
+  object-fit: cover;
 }
