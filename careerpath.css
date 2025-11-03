@@ -7,7 +7,7 @@ body {
 
 
 .navbar {
-  background-color: #7aa086;
+  background-color: #3b614b;
   text-align: center;
   padding: 15px 0;
 }
@@ -16,10 +16,13 @@ body {
   height: 60px;      
   width: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .navbar ul {
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -30,15 +33,18 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
+  padding: 10px 16px;
   transition: color 0.3s;
 }
 
-.navbar a:hover {
-  color: #dce4dc;
+.navbar a:hover,
+.navbar a:focus {
+  color: #4e7b5f;
+  outline: 2px solid transparent;
 }
 
 .page-header {
@@ -49,7 +55,7 @@ body {
 }
 
 .page-header h1 {
-  color: #7aa086;
+  color: #4e7b5f;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
 }
@@ -85,7 +91,7 @@ body {
 }
 
 .text h1 {
-  color: #7aa086;
+  color: #4e7b5f;
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
   margin-bottom: 15px;
@@ -94,6 +100,7 @@ body {
 .text p {
   font-size: 16px;
   line-height: 1.6;
+  color: var(--text-dark);
 }
 
 
@@ -112,4 +119,56 @@ body {
   }
 }
 
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #2e4a38; 
+  color: #ffffff;
+  padding: 30px 0;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
 
+.footer h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.footer ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding: 12px 18px;  
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.footer a:hover,
+.footer a:focus {
+  background-color: #3b614b;
+  outline: none;
+  color: #e5efe8;
+}
+
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

@@ -6,10 +6,13 @@ body {
 }
 
 .navbar {
-  background-color: #7aa086;
-  text-align: center;
-  padding: 15px 0;
+  background-color: #2c4934; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
+
 
 .logo {
   height: 60px;      
@@ -21,6 +24,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 25px;
 }
 
 .navbar li {
@@ -28,18 +33,19 @@ body {
   margin: 0 20px;
 }
 
-.navbar a {
-  color: white;
+.nav-links a {
+  color: #ffffff;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
   transition: color 0.3s;
+  padding: 10px;
 }
 
-.navbar a:hover {
-  color: #dce4dc;
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #b8e0c1;
 }
-
 
 .comment-section {
   max-width: 600px;
@@ -52,7 +58,7 @@ body {
 }
 
 .comment-section h1 {
-  color: #7aa086;
+  color: #2c4934;
   font-family: "Bebas Neue", sans-serif;
   font-size: 32px;
   margin-bottom: 10px;
@@ -61,6 +67,7 @@ body {
 .comment-section p {
   font-size: 16px;
   margin-bottom: 30px;
+  color: #444;
 }
 
 form {
@@ -72,20 +79,20 @@ form {
 label {
   text-align: left;
   font-weight: bold;
-  color: #555;
+  color: #333;
 }
 
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   border-radius: 6px;
   font-family: inherit;
   font-size: 14px;
 }
 
 button {
-  background-color: #7aa086;
+  background-color: #3b614b;
   color: white;
   border: none;
   padding: 12px;
@@ -98,15 +105,56 @@ button {
 }
 
 button:hover {
-  background-color: #688a73;
+  background-color: #58856a;
 }
 
 
 .footer {
+  grid-area: footer;
   text-align: center;
-  background-color: #7aa086;
-  color: white;
-  padding: 15px 0;
-  margin-top: 50px;
+  background-color: #2e4a38; 
+  color: #ffffff;
+  padding: 30px 0;
   font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.footer h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding: 12px 18px;  
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer a:hover,
+.footer a:focus {
+  background-color: #3b614b;
+  outline: none;
+  color: #e5efe8;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }

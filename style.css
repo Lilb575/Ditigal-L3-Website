@@ -15,50 +15,53 @@ color: #333;
 
 }
 
- .navbar {
+.navbar {
+  grid-area: navbar;
+  background-color: #3b614b;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;  
-  background: #ffffff;             
-  padding: 10px 24px;
-  position: sticky;                
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08);
 }
 
-
 .logo {
-  height: 60px;      
+  height: 60px;
   width: auto;
   display: block;
 }
 
 
-.navbar ul {
+.nav-links {
+  display: flex;
   list-style: none;
+  gap: 30px;
   margin: 0;
   padding: 0;
-
 }
  
-.navbar li {
-   display: inline-block;
-   margin: 0 20px;
-
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding: 10px 16px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar a {
-    color: #7aa086;
-    text-decoration: none;
-    font-family: "Bebas Neue" , sans-serif;
-    font-size: 20px;
-    transition: color 0.3s;
-
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #4e7b5f;
+  color: #e5efe8;
+  border-radius: 6px;
+  outline: none;
 }
 
 .navbar a:hover{
-    color: #dce4dc;
+    color: #151615;
 }
 
 .header {grid-area: header;}
@@ -71,7 +74,7 @@ color: #333;
 
 .header {
     grid-area: header;
-    background-color: #7aa086;
+    background-color: #3b614b;
     padding: 40px 0;
     text-align: center;
     color: white;
@@ -105,7 +108,7 @@ color: #333;
 }
 
 .text_1 h2, .text_2 h2 {
-    color: #7aa086;
+    color: #3b614b;
     font-family: "Bebas Neue", sans-serif;
     font-size: 28px;
     margin-bottom: 15px;
@@ -117,13 +120,45 @@ color: #333;
 }
 
 .footer {
-    grid-area: footer;
-    text-align: center;
-    background-color: #7aa086;
-    color: white;
-    padding: 20px 0;
-    font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 1px;
+  grid-area: footer;
+  text-align: center;
+  background-color: #2e4a38;
+  color: #ffffff;
+  padding: 30px 0;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer a:hover,
+.footer a:focus {
+  background-color: #3b614b;
+  color: #e5efe8;
+  outline: none;
 }
 
 .image_1 { grid-area: image_1; } 
@@ -161,7 +196,7 @@ margin-top: 15px;
 
  .button { 
   display: inline-block; 
-  background-color: #7aa086; 
+  background-color: #4e7b5f; 
   color: white; 
   padding: 10px 20px; 
   text-decoration: none; 
@@ -174,7 +209,7 @@ margin-top: 15px;
  
 
 .button:hover { 
-  background-color: #62846b; 
+  background-color: #355543; 
 } 
 
 
