@@ -133,7 +133,7 @@ button:hover {
   font-weight: 600;
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.10s ease, transform 0.10s ease;
 }
 
 .success-message.show {
